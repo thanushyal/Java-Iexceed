@@ -2,12 +2,12 @@ class details
 {
   details (int r_no, String name, int age, int t_mark)
   {
-	System.out.println ("RollNO:"+r_no);
-	System.out.println ("Name:"+name);
-	System.out.println ("Age:"+age);
-	System.out.println ("Total Mark:"+t_mark);
+	System.out.println ("RollNO:" + r_no);
+	System.out.println ("Name:" + name);
+	System.out.println ("Age:" + age);
+	System.out.println ("Total Mark:" + t_mark);
   }
-  public static int chkel (int age)
+  public static void chkel (int age)
   {
       System.out.println("eligible for throwball");
 	if (age >= 12)
@@ -18,11 +18,8 @@ class details
 	  {
 	    System.out.println ("not eligible for jonal match");
 	  }
-	  return 0;
-	
-
   }
-  public int t_grade (int t_mark)
+  public void t_grade (int t_mark)
   {
 	if (t_mark < 80)
 	  {
@@ -48,16 +45,23 @@ class details
 	  {
 		System.out.println ("Chk marks");
 	  }
-	 return 0;
+  }
+  public boolean mstatus(String status)
+  {
+      if(status!="yes")
+      {
+        return false;
+      }
+    return true;
   }
 }
-
 public class student
 {
   public static void main (String args[])
   {
 	details st = new details (206, "sri", 21, 550);
-	  System.out.println (st.chkel (21));
-	  System.out.println (st.t_grade (550));
-  }
+	  st.chkel (21);
+	  st.t_grade(550);
+	  System.out.println(st.mstatus("no"));
+  }  
 }
