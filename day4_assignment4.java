@@ -40,35 +40,36 @@ class bunk
 }
 public class Main
 {
-	public static void main(String[] args)
-	{
-		bunk b=new bunk ();
-		b.setp_or_d("1.petrol");
-		b.setveh_no(9698);
-		b.setquantity(3);
-		b.setveh_type("bike");
+public static void main(String[] args)
+{
+   bunk b=new bunk ();
+   b.setp_or_d("1.petrol");
+   b.setveh_no(9698);
+   b.setquantity(3);
+   b.setveh_type("bike");
 
     
-    bunk b1=new bunk ();
-		b1.setp_or_d("2.diesl");
-		b1.setveh_no(4523);
-		b1.setquantity(20);
-		b1.setveh_type("truck");
+   bunk b1=new bunk ();
+   b1.setp_or_d("2.diesl");
+   b1.setveh_no(4523);
+   b1.setquantity(20);
+   b1.setveh_type("truck");
     
 		
-    bunk b2=new bunk ();
-		b2.setp_or_d("3.petrol");
-		b2.setveh_no(5467);
-		b2.setquantity(2);
-		b2.setveh_type("scooty");
+   bunk b2=new bunk ();
+   b2.setp_or_d("3.petrol");
+   b2.setveh_no(5467);
+   b2.setquantity(2);
+   b2.setveh_type("scooty");
     
-		bunk obj_b[]=new bunk[3];
+   bunk obj_b[]=new bunk[3];
     
-		obj_b[0]=b;
-    obj_b[1]=b1;
-    obj_b[2]=b2;
+   obj_b[0]=b;
+   obj_b[1]=b1;
+   obj_b[2]=b2;
     
-    for(int t=0;t<obj_b.length;t++)
+    
+   for(int t=0;t<obj_b.length;t++)
     {
         System.out.println(obj_b[t].getp_or_d());
         System.out.println(obj_b[t].getveh_no());
@@ -77,5 +78,5 @@ public class Main
      }
 		
 		
-	}
+}
 }
