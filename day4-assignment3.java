@@ -1,4 +1,5 @@
 //two dimensional array
+//displaying in matrix form
 import java.io.DataInputStream;
 public class dblearr 
 {
