@@ -1,3 +1,4 @@
+//using abstract class and abstract method
 abstract class route_bus
 {
   abstract public void displayplot ();
